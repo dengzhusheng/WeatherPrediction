@@ -85,7 +85,7 @@ class BomWeatherStation (
                           yesterday = today
                       }catch {
                           case e: IllegalArgumentException => println(e.toString())
-                          case _: Throwable => None // TODO: println
+                          case _: Throwable => None
                       }
                   }
             })
